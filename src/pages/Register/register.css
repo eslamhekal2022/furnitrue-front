@@ -1,0 +1,99 @@
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-image {
+  flex: 1;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* جرب cover أو contain حسب الشكل اللي يعجبك */
+  display: block;
+}
+
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.login-form-container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sub-Auth {
+  width: 100%;
+  padding: 12px;
+  background: #a17950;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sub-Auth:hover {
+  background: #865f3b;
+}
+
+.PAuth {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.GoAuth {
+  color: #a17950;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.GoAuth:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form-container {
+    padding: 20px;
+  }
+}

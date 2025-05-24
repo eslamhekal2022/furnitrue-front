@@ -1,0 +1,155 @@
+.ReviewUsers {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  direction: rtl;
+  text-align: center;
+}
+
+.titleHome {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.review-card {
+  background-color: #ffffff;
+  padding: 25px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #1abc9c;
+}
+
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 16px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.comment {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.actions {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.DeleteRev,
+.EditRev {
+  cursor: pointer;
+  font-size: 18px;
+  color: #e74c3c;
+  transition: color 0.3s ease;
+}
+
+.EditRev {
+  color: #2980b9;
+}
+
+.DeleteRev:hover {
+  color: #c0392b;
+}
+
+.EditRev:hover {
+  color: #1abc9c;
+}
+
+/* Edit Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-form textarea {
+  resize: none;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.edit-form input[type="number"] {
+  width: 100px;
+  margin: auto;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.saveEdit,
+.canelEdit {
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.canelEdit {
+  background-color: #7f8c8d;
+}
+
+.saveEdit:hover {
+  background-color: #16a085;
+}
+
+.canelEdit:hover {
+  background-color: #95a5a6;
+}
+
+.no-reviews,
+.loading {
+  font-size: 16px;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-card {
+    width: 90%;
+  }
+
+  .edit-form input[type="number"] {
+    width: 100%;
+  }
+}

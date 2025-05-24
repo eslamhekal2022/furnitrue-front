@@ -1,0 +1,50 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #4b3e2c;
+  margin-bottom: 1rem;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #6a5c45;
+}
+
+.about-content p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-content h2, .about-content h3 {
+    text-align: center;
+  }
+}

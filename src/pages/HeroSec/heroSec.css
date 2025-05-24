@@ -1,0 +1,145 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 30px;
+  background-color: #f7f7f7;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+}
+
+.year-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.year-title .bold {
+  color: #1abc9c;
+}
+
+.year-title .script {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 38px;
+  margin-left: 10px;
+  color: #e67e22;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.desc {
+  color: #5b5b5b;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.shop-btn {
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #16a085;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-image {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 15px;
+  left: 0px;
+  transform: translateX(-50%);
+  background-color: rgba(44, 62, 80, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.price-tag p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.price-tag h4 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.price-tag span {
+  font-size: 14px;
+  color: #1abc9c;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 868px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .price-tag {
+    transform: translate(-30%,-10%);
+  }
+
+  .hero-left, .hero-right {
+    padding: 10px;
+  }
+
+  .year-title {
+    font-size: 30px;
+  }
+
+  .script {
+    font-size: 28px;
+  }
+
+  .product-image {
+    max-width: 90%;
+  }
+}
