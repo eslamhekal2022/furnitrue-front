@@ -10,6 +10,7 @@ const WhatsAppButton = ({ product, customMessage, phoneNumber = '201006553237' }
 🛋️ *Product Name:* ${product.name}
 
 💰 *Price:* ${product.price} EGP
+ 🖼️ *View Image:* ${imageUrl}
 
 🟢 I'm interested in this product, please contact me.
 `;
@@ -33,4 +34,3 @@ const WhatsAppButton = ({ product, customMessage, phoneNumber = '201006553237' }
 };
 
 export default WhatsAppButton;
-// 🖼️ *View Image:* ${imageUrl}
