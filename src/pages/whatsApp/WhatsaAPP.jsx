@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WhatsAppButton = ({ product, customMessage, phoneNumber = '201003127755' }) => {
+const WhatsAppButton = ({ product, customMessage, phoneNumber = '201065624727' }) => {
   // الرسالة الأساسية
   let message = '';
 
